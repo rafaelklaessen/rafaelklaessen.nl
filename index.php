@@ -209,7 +209,7 @@
     <footer id="site-footer" class="site-footer page-section">
       <div class="container">
         <p class="section-text">
-          Footer
+          Built with <span class="heart">&lt;3</span> in the Netherlands
         </p>
       </div>
     </footer>

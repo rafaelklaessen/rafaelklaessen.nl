@@ -344,4 +344,9 @@ $headerHeight: 64px;
 #site-footer {
   color: #FFFFFF;
   background-color: #212121;
+  font-family: 'Roboto Mono', sans-serif;
+
+  .section-text .heart {
+    color: #EA4335;
+  }
 }

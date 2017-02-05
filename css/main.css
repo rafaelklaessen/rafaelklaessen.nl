@@ -258,6 +258,9 @@ p,
 
 #site-footer {
   color: #FFFFFF;
-  background-color: #212121; }
+  background-color: #212121;
+  font-family: 'Roboto Mono', sans-serif; }
+  #site-footer .section-text .heart {
+    color: #EA4335; }
 
 /*# sourceMappingURL=main.css.map */
