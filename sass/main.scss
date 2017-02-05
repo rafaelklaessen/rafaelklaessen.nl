@@ -1,1 +1,161 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500|Roboto:300,400,500');
+
+$mainTransition: all .2s ease-in-out;
+
+// Mixin for transition
+@mixin transition($transition) {
+  transition: $transition;
+  -moz-transition: $transition;
+  -webkit-transition: $transition;
+  -ms-transition: $transition;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.page-section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1280px;
+  max-width: 100%;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.section-text {
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#site-header {
+  display: none;
+}
+
+#site-intro {
+  color: #FFFFFF;
+  background-color: #4285F4;
+
+  .site-title {
+    font-size: 56px;
+  }
+
+  .site-subtext {
+    font-family: 'Roboto Mono', sans-serif;
+    color: rgba(255, 255, 255, .87);
+  }
+}
+
+#work {
+  background-color: #ECEFF1;
+  overflow: auto;
+
+  .work-item-container {
+    margin: {
+      bottom: -24px;
+      left: -12px;
+      right: -12px;
+    };
+
+    .work-item {
+      float: left;
+      margin: {
+        bottom: 24px;
+        left: 12px;
+        right: 12px;
+      };
+      margin-top: 0;
+      padding-left: 12px;
+      padding-right: 12px;
+      width: calc(33.33333333% - 24px);
+      background-color: #FFFFFF;
+      box-sizing: border-box;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .21);
+      display: inline-block;
+      cursor: pointer;
+      @include transition($mainTransition);
+
+      &:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
+      }
+
+      .work-preview {
+        margin: 0;
+        width: 100%;
+        height: 10vw;
+        background-position: center;
+        background-size: 100px;
+        background-repeat: no-repeat;
+      }
+
+      .work-title {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        width: 100%;
+        color: #424242;
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+#about {
+  color: #FFFFFF;
+  background-color: #34A853;
+
+  .section-title .title-topline {
+    margin-bottom: 6px;
+    color: rgba(255, 255, 255, .87);
+    font-size: 18px;
+  }
+}
+
+#skills {
+  background-color: #EA4335;
+
+  .skill-item-container {
+    margin-left: -12px;
+    margin-right: -12px;
+    display: inline-block;
+
+    .skill-item {
+      float: left;
+      margin-left: 12px;
+      margin-right: 12px;
+      width: calc(12.5% - 24px);
+
+      .skill-image-container {
+        margin: 0;
+        padding: 4px;
+        width: 100%;
+        box-sizing: border-box;
+
+        .skill-image {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
