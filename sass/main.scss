@@ -46,11 +46,54 @@ h1, h2, h3, h4 {
   }
 }
 
+$headerHeight: 64px;
 #site-header {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $headerHeight;
+  line-height: $headerHeight;
+  vertical-align: middle;
+  color: #FFFFFF;
+  background-color: #4285F4;
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  @include transition($mainTransition);
+
+  &.is-scrolling {
+    color: #000000;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
+  }
+
+  .nav .nav-items {
+    float: right;
+    margin: 0 -12px;
+    padding: 0;
+    list-style: none;
+
+    .nav-item {
+      float: left;
+      margin-left: 12px;
+      margin-right: 12px;
+      @include transition(opacity .2s ease-in-out);
+
+      &:hover {
+        opacity: .5;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+    }
+  }
 }
 
 #site-intro {
+  margin-top: $headerHeight;
   color: #FFFFFF;
   background-color: #4285F4;
 
@@ -135,26 +178,19 @@ h1, h2, h3, h4 {
   background-color: #EA4335;
 
   .skill-item-container {
-    margin-left: -12px;
-    margin-right: -12px;
-    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
     .skill-item {
-      float: left;
-      margin-left: 12px;
-      margin-right: 12px;
-      width: calc(12.5% - 24px);
+      line-height: 36px;
+      vertical-align: middle;
 
-      .skill-image-container {
-        margin: 0;
-        padding: 4px;
-        width: 100%;
-        box-sizing: border-box;
-
-        .skill-image {
-          width: 100%;
-          height: auto;
-        }
+      .skill-image {
+        float: left;
+        margin-right: 12px;
+        width: auto;
+        height: 36px;
       }
     }
   }
