@@ -90,6 +90,9 @@
             <h4 class="work-title">Roeland Ruijsch Songwriting Studio</h4>
           </article>
         </section>
+        <p class="github-link">
+          By the way, if you're a developer, you might be interested in my <a class="normal-link" href="https://github.com/rafaelklaessen/" target="_blank">GitHub</a>.
+        </p>
       </div>
     </section>
 
@@ -140,6 +143,22 @@
         </ul>
       </div>
     </section>
+
+    <section id="contact" class="contact page-section">
+      <div class="container">
+        <h1 class="section-title">
+          Contact
+        </h1>
+      </div>
+    </section>
+
+    <footer id="site-footer" class="site-footer page-section">
+      <div class="container">
+        <p class="section-text">
+          Footer
+        </p>
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/main.js"></script>

@@ -6,6 +6,16 @@ body {
 h1, h2, h3, h4 {
   font-family: 'Roboto Mono', sans-serif; }
 
+.normal-link {
+  color: #4285F4;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out; }
+  .normal-link:hover {
+    color: #083D91; }
+
 .page-section {
   padding-top: 56px;
   padding-bottom: 56px; }
@@ -22,8 +32,10 @@ h1, h2, h3, h4 {
   font-size: 36px;
   font-weight: 400; }
 
+p,
 .section-text {
   margin-bottom: 24px; }
+  p:last-child,
   .section-text:last-child {
     margin-bottom: 0; }
 
@@ -64,8 +76,10 @@ h1, h2, h3, h4 {
       #site-header .nav .nav-items .nav-item:hover {
         opacity: .5; }
       #site-header .nav .nav-items .nav-item a {
+        line-height: 64px;
         color: inherit;
-        text-decoration: inherit; }
+        text-decoration: inherit;
+        display: inline-block; }
 
 #site-intro {
   margin-top: 64px;
@@ -83,7 +97,8 @@ h1, h2, h3, h4 {
   #work .work-item-container {
     margin-bottom: -24px;
     margin-left: -12px;
-    margin-right: -12px; }
+    margin-right: -12px;
+    display: inline-block; }
     #work .work-item-container .work-item {
       float: left;
       margin-bottom: 24px;
@@ -120,6 +135,8 @@ h1, h2, h3, h4 {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
+  #work .github-link {
+    margin-bottom: 24px; }
 
 #about {
   color: #FFFFFF;
