@@ -65,27 +65,27 @@
           What I've made
         </h1>
         <section class="work-item-container">
-          <article class="work-item">
+          <article id="agoravm" class="work-item">
             <figure class="work-preview" style="background-image: url('images/work/agoravm.png')"></figure>
             <h4 class="work-title">AgoraVM</h4>
           </article>
-          <article class="work-item">
+          <article id="mdc" class="work-item">
             <figure class="work-preview" style="background-image: url('images/work/mdc.png')"></figure>
             <h4 class="work-title">Miljonairs Dating Club</h4>
           </article>
-          <article class="work-item">
+          <article id="pin" class="work-item">
             <figure class="work-preview" style="background-image: url('images/work/pin.png')"></figure>
-            <h4 class="work-title">Internet-Nation</h4>
+            <h4 class="work-title">Project Internet Nation</h4>
           </article>
-          <article class="work-item">
+          <article id="noodlesearching" class="work-item">
             <figure class="work-preview" style="background-image: url('images/work/noodlesearching.png')"></figure>
             <h4 class="work-title">NoodleSearching</h4>
           </article>
-          <article class="work-item">
+          <article id="valeur" class="work-item">
             <figure class="work-preview" style="background-image: url('images/work/valeur.png')"></figure>
             <h4 class="work-title">Valeur Psychologie</h4>
           </article>
-          <article class="work-item">
+          <article id="roeland" class="work-item">
             <figure class="work-preview" style="background-image: url('images/work/roeland.png')"></figure>
             <h4 class="work-title">Roeland Ruijsch Songwriting Studio</h4>
           </article>
@@ -130,7 +130,7 @@
           </li>
           <li class="skill-item">
             <img class="skill-image" src="images/skills/phoenix.png" alt="HTML5 logo">
-            <h4 class="skill-title">Phoenix framework</h4>
+            <h4 class="skill-title">Phoenix Framework</h4>
           </li>
           <li class="skill-item">
             <img class="skill-image" src="images/skills/golang.png" alt="HTML5 logo">

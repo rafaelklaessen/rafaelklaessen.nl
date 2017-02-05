@@ -1,0 +1,9 @@
+{
+  "id": "mdc",
+  "name": "MiljonairsDatingClub",
+  "description": "MiljonairsDatingClub is a website where millionnaire can get in touch with other millionnaires.",
+  "roles": ["Frontend webdevelopment"],
+  "technologies": ["HTML5", "CSS3", "JavaScript", "PHP", "WordPress"],
+  "link": "http://www.miljonairsdatingclub.com",
+  "screenshots": ["images/work/screenshots/mdc/1.jpg"]
+}

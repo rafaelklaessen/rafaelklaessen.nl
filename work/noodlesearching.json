@@ -1,0 +1,10 @@
+{
+  "id": "noodlesearching",
+  "name": "NoodleSearching",
+  "description": "Together with a two other developers I made NoodleSearching; Noodlesearching is a search engine that enables you to search at multiple Chinese product websites at the same time. Results can easily be filtered.",
+  "roles": ["Frontend webdevelopment"],
+  "technologies": ["HTML5", "CSS3", "JavaScript", "PHP"],
+  "link": "http://noodlesearching.com",
+  "githubLink": "https://github.com/rafaelklaessen/dev_project",
+  "screenshots": ["images/work/screenshots/noodlesearching/1.jpg", "images/work/screenshots/noodlesearching/2.jpg"]
+}

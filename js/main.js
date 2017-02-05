@@ -33,6 +33,18 @@ function checkScroll() {
 // refreshed the page while not being at the top.
 checkScroll();
 
+// Open work items
+$('#work .work-item').click(function() {
+  // Get item ID
+  var itemId = $(this).attr('id');
+  
+  // Load JSON file based on ID
+  $.getJSON('work/' + itemId + '.json', {})
+    .done(function(data) {
+      console.log(data);
+    });
+});
+
 // Send contact form with AJAX
 $('#contact .contact-form').submit(function(e) {
   e.preventDefault();
