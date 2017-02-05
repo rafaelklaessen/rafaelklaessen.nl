@@ -16,6 +16,30 @@ h1, h2, h3, h4 {
   .normal-link:hover {
     color: #083D91; }
 
+.btn {
+  padding: 0 16px;
+  line-height: 36px;
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  outline-width: 0;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none; }
+  .btn:active {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12); }
+
 .page-section {
   padding-top: 56px;
   padding-bottom: 56px; }
@@ -34,7 +58,8 @@ h1, h2, h3, h4 {
 
 p,
 .section-text {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  line-height: 1.5; }
   p:last-child,
   .section-text:last-child {
     margin-bottom: 0; }
@@ -139,11 +164,11 @@ p,
     margin-bottom: 24px; }
 
 #about {
-  color: #FFFFFF;
-  background-color: #34A853; }
+  color: rgba(0, 0, 0, 0.7);
+  background-color: #FBBC05; }
   #about .section-title .title-topline {
     margin-bottom: 6px;
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(0, 0, 0, 0.6);
     font-size: 18px; }
 
 #skills {
@@ -160,5 +185,79 @@ p,
         margin-right: 12px;
         width: auto;
         height: 36px; }
+
+#contact {
+  background-color: #ECEFF1;
+  overflow: auto; }
+  #contact .contact-form-container {
+    float: left;
+    margin-right: 96px; }
+    #contact .contact-form-container .contact-form {
+      width: 360px; }
+      #contact .contact-form-container .contact-form .form-group {
+        margin-bottom: 18px; }
+        #contact .contact-form-container .contact-form .form-group .form-label {
+          margin-bottom: 6px;
+          width: 100%;
+          display: block; }
+        #contact .contact-form-container .contact-form .form-group .form-field {
+          padding: 6px 12px;
+          width: 100%;
+          line-height: 1.5;
+          font: inherit;
+          border: 1px solid #9E9E9E;
+          outline-width: 0;
+          box-sizing: border-box;
+          transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          -ms-appearance: none; }
+          #contact .contact-form-container .contact-form .form-group .form-field.error {
+            border-color: #EA4335; }
+          #contact .contact-form-container .contact-form .form-group .form-field:focus {
+            border-color: #4285F4; }
+        #contact .contact-form-container .contact-form .form-group .form-textarea {
+          height: 200px;
+          resize: none; }
+        #contact .contact-form-container .contact-form .form-group .form-error {
+          margin-top: 4px;
+          color: #EA4335; }
+      #contact .contact-form-container .contact-form .submit-btn {
+        color: #FFFFFF;
+        background-color: #4285F4; }
+        #contact .contact-form-container .contact-form .submit-btn:hover {
+          background-color: #083D91; }
+    #contact .contact-form-container .success-message {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 24px;
+      font-weight: 400;
+      display: none; }
+  #contact .social-media-container {
+    float: left; }
+    #contact .social-media-container .social-media-items {
+      margin: 0 -12px;
+      padding: 0;
+      list-style: none; }
+      #contact .social-media-container .social-media-items .social-media-item {
+        float: left;
+        margin-left: 12px;
+        margin-right: 12px; }
+        #contact .social-media-container .social-media-items .social-media-item .social-media-icon {
+          width: 56px;
+          height: 56px;
+          transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -webkit-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out; }
+          #contact .social-media-container .social-media-items .social-media-item .social-media-icon:hover {
+            opacity: .7; }
+
+#site-footer {
+  color: #FFFFFF;
+  background-color: #212121; }
 
 /*# sourceMappingURL=main.css.map */

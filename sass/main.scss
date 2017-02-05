@@ -10,6 +10,15 @@ $mainTransition: all .2s ease-in-out;
   -ms-transition: $transition;
 }
 
+
+// Shortcut for no appearance
+@mixin noappearance() {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -26,6 +35,27 @@ h1, h2, h3, h4 {
 
   &:hover {
     color: #083D91;
+  }
+}
+
+.btn {
+  padding: 0 16px;
+  line-height: 36px;
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+  cursor: pointer;
+  outline-width: 0;
+  @include transition($mainTransition);
+  @include noappearance();
+
+  &:active {
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, .2), 0px 8px 10px 1px rgba(0, 0, 0, .14), 0px 3px 14px 2px rgba(0, 0, 0, .12);
   }
 }
 
@@ -51,6 +81,7 @@ h1, h2, h3, h4 {
 p,
 .section-text {
   margin-bottom: 24px;
+  line-height: 1.5;
 
   &:last-child {
     margin-bottom: 0;
@@ -182,12 +213,12 @@ $headerHeight: 64px;
 }
 
 #about {
-  color: #FFFFFF;
-  background-color: #34A853;
+  color: rgba(0, 0, 0, .7);
+  background-color: #FBBC05;
 
   .section-title .title-topline {
     margin-bottom: 6px;
-    color: rgba(255, 255, 255, .87);
+    color: rgba(0, 0, 0, .6);
     font-size: 18px;
   }
 }
@@ -212,4 +243,105 @@ $headerHeight: 64px;
       }
     }
   }
+}
+
+#contact {
+  background-color: #ECEFF1;
+  overflow: auto;
+
+  .contact-form-container {
+    float: left;
+    margin-right: 96px;
+    
+    .contact-form {
+      width: 360px;
+
+      .form-group {
+        margin-bottom: 18px;
+
+        .form-label {
+          margin-bottom: 6px;
+          width: 100%;
+          display: block;
+        }
+
+        .form-field {
+          padding: 6px 12px;
+          width: 100%;
+          line-height: 1.5;
+          font: inherit;
+          border: 1px solid #9E9E9E;
+          outline-width: 0;
+          box-sizing: border-box;
+          @include transition($mainTransition);
+          @include noappearance();
+
+          &.error {
+            border-color: #EA4335;
+          }
+
+          &:focus {
+            border-color: #4285F4;
+          }
+        }
+
+        .form-textarea {
+          height: 200px;
+          resize: none;
+        }
+
+        .form-error {
+          margin-top: 4px;
+          color: #EA4335;
+        }
+      }
+
+      .submit-btn {
+        color: #FFFFFF;
+        background-color: #4285F4;
+
+        &:hover {
+          background-color: #083D91;
+        }
+      }
+    }
+
+    .success-message {
+      color: rgba(0, 0, 0, .7);
+      font-size: 24px;
+      font-weight: 400;
+      display: none;
+    }
+  }
+
+  .social-media-container {
+    float: left;
+
+    .social-media-items {
+      margin: 0 -12px;
+      padding: 0;
+      list-style: none;
+
+      .social-media-item {
+        float: left;
+        margin-left: 12px;
+        margin-right: 12px;
+
+        .social-media-icon {
+          width: 56px;
+          height: 56px;
+          @include transition($mainTransition);
+
+          &:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+  }
+}
+
+#site-footer {
+  color: #FFFFFF;
+  background-color: #212121;
 }
