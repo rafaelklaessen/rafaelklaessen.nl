@@ -1,10 +1,10 @@
 {
-  "id": "noodlesearching",
-  "name": "NoodleSearching",
-  "description": "Together with a two other developers I made NoodleSearching; Noodlesearching is a search engine that enables you to search at multiple Chinese product websites at the same time. Results can easily be filtered.",
+  "id": "roeland",
+  "colors": ["#000000", "#FF00FF"],
+  "name": "Roeland Ruijsch Songwriting Studio",
+  "description": "I made this website for Roeland Ruijsch. It has an English and Dutch version and it's focus is music.",
   "roles": ["Frontend webdevelopment"],
   "technologies": ["HTML5", "CSS3", "JavaScript", "PHP"],
-  "link": "http://noodlesearching.com",
-  "githubLink": "https://github.com/rafaelklaessen/dev_project",
-  "screenshots": ["images/work/screenshots/noodlesearching/1.jpg", "images/work/screenshots/noodlesearching/2.jpg"]
+  "link": "http://roelandruijsch.nl",
+  "screenshots": ["images/work/screenshots/roeland/1.jpg", "images/work/screenshots/roeland/2.jpg"]
 }

@@ -150,7 +150,7 @@
           Interested in me or my work?
         </h1>
         <p class="section-text">
-          Or just want to say hi? You can hit me up at <a class="normal-link" href="mailto:rafael@rafaelklaessen.nl">rafael@rafaelklaessen</a> or you can use the form below.
+          Or just want to say hi? You can hit me up at <a class="normal-link" href="mailto:rafael@rafaelklaessen.nl">rafael@rafaelklaessen.nl</a> or you can use the form below.
           Of course, you can also connect with me via social media.
         </p>
         <section class="contact-form-container">
@@ -209,7 +209,7 @@
     <footer id="site-footer" class="site-footer page-section">
       <div class="container">
         <p class="section-text">
-          Built with <span class="heart">&lt;3</span> in the Netherlands
+          Built with <span class="heart">&lt;3</span> in the Netherlands - View project on <a class="normal-link" href="#">GitHub</a>
         </p>
       </div>
     </footer>

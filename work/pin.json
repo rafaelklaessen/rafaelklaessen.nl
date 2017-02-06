@@ -1,5 +1,6 @@
 {
   "id": "pin",
+  "colors": ["#000000", "#FF00FF"],
   "name": "Project Internet Nation",
   "description": "Project Internet Nation's aim is to make the internet a safer place by giving websites a quality mark.",
   "roles": ["Frontend webdevelopment", "Backend webdevelopment"],

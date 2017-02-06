@@ -41,7 +41,14 @@ $('#work .work-item').click(function() {
   // Load JSON file based on ID
   $.getJSON('work/' + itemId + '.json', {})
     .done(function(data) {
-      console.log(data);
+      $('<section id="' + data.id + '" class="work-item-uncollapsed page-section">' + 
+          '<div class="container">' +
+            '<header class="work-item-header" style="background-color:' + data.colors[0] + '">' +
+              '<h1 class="work-item-title section-title">' + data.name + '</h1>' + 
+              '<p class="work-item-text section-text">' + data.description + '</p>' + 
+            '</header>' +
+          '</div>' +
+        '</section').appendTo('body')
     });
 });
 
