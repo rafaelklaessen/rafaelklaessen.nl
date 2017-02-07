@@ -231,12 +231,12 @@ $headerHeight: 64px;
 
   .skill-item-container {
     margin: 0;
-    padding: 0;
+    padding: 12px 0;
     list-style: none;
 
     .skill-item {
-      margin-top: 24px;
-      margin-bottom: 24px;
+      padding-top: 12px;
+      padding-bottom: 12px;
       line-height: 36px;
       vertical-align: middle;
 
