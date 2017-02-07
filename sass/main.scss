@@ -234,6 +234,8 @@ $headerHeight: 64px;
     list-style: none;
 
     .skill-item {
+      margin-top: 24px;
+      margin-bottom: 24px;
       line-height: 36px;
       vertical-align: middle;
 
@@ -242,6 +244,10 @@ $headerHeight: 64px;
         margin-right: 12px;
         width: auto;
         height: 36px;
+      }
+
+      .skill-title {
+        margin: 0;
       }
     }
   }

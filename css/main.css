@@ -180,6 +180,8 @@ p,
     padding: 0;
     list-style: none; }
     #skills .skill-item-container .skill-item {
+      margin-top: 24px;
+      margin-bottom: 24px;
       line-height: 36px;
       vertical-align: middle; }
       #skills .skill-item-container .skill-item .skill-image {
@@ -187,6 +189,8 @@ p,
         margin-right: 12px;
         width: auto;
         height: 36px; }
+      #skills .skill-item-container .skill-item .skill-title {
+        margin: 0; }
   #skills .code-preview {
     position: absolute;
     bottom: 0;
