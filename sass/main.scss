@@ -357,6 +357,7 @@ $headerHeight: 64px;
   left: 0;
   width: 100%;
   height: 100%;
+  display: none;
   overflow-x: hidden;
   overflow-y: auto;
 
@@ -366,7 +367,6 @@ $headerHeight: 64px;
     padding-bottom: 112px;
 
     &.activated { 
-
       .work-item-title {
         opacity: 1;
       }
@@ -387,6 +387,10 @@ $headerHeight: 64px;
       &:hover {
         opacity: .7;
       }
+    }
+
+    .container {
+      position: relative;
     }
 
     .work-item-title {
@@ -413,6 +417,18 @@ $headerHeight: 64px;
         text-transform: uppercase;
         opacity: .87;
         display: inline-block;
+      }
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      @include transition($mainTransition);
+
+      &:hover {
+        opacity: .7;
       }
     }
   }

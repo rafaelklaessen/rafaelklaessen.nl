@@ -70,6 +70,7 @@ $('#work .work-item').click(function() {
               '<div class="work-item-roles work-item-field"><span class="roles-title title">Role: </span>' + roles + '</div>' +
               '<div class="work-item-technologies work-item-field"><span class="technologies-title title">Technologies used: </span>' + technologies + '</div>' +
               '<div class="work-item-link work-item-field"><span class="link-title title">Link: </span><a href="' + data.link + '" target="_blank">' + link + '</a></div>' +
+              '<div class="close-btn material-icons">close</div>' +
             '</div>' +
           '</header>' +
           '<div class="container">' +
@@ -80,26 +81,56 @@ $('#work .work-item').click(function() {
         '</section');
       
       // Append work item to body
-      workItem.appendTo('body')
+      workItem.appendTo('body').fadeIn(200);
       
       // Disable scroll in body
       $('body').css({'overflow-y': 'hidden'});
 
       // After a little delay, add the activated class to the work-item-header
-      // for the animation. Also loop through screenshots and add the
-      // activated class to each one for the animation a bit later (after the 
-      // header animations are done).
+      // for the animation. 
       setTimeout(function() {
         workItem.find('.work-item-header').addClass('activated');
       
+        // After the header animations are partially done, do the screenshot 
+        // animation.
         setTimeout(function() {
+          // Also loop through screenshots and add the
+          // activated class to each one for the animation.
           workItem.find('.screenshot').each(function(i) {
             setTimeout(function() {
               $('.screenshot').eq(i).addClass('activated');
             }, i * 300);
           });
-        }), 1000;
-      }, 100);
+        }, 200);
+      }, 300);
+
+      // Add close button listener 
+      workItem.find('.close-btn').click(function() {
+        // Animate workitem header 
+        workItem.find('.work-item-header').removeClass('activated');
+
+        // After the header animations are partially done, do the screenshot 
+        // remove animation.
+        setTimeout(function() {
+          // Loop through the screenshots and remove the activated class for
+          // the animation.
+          workItem.find('.screenshot').each(function(i) {
+            setTimeout(function() {
+              $('.screenshot').eq(i).removeClass('activated');
+            }, i * 300);
+          });
+        }, 200);
+
+        // Fade the work-item element out after the animations are done.
+        setTimeout(function() {
+          workItem.fadeOut(200);
+
+          // After the element's faded out, remove it.
+          setTimeout(function() {
+            workItem.remove();
+          }, 200);
+        }, 800);
+      });
     });
 });
 

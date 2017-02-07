@@ -269,6 +269,7 @@ p,
   left: 0;
   width: 100%;
   height: 100%;
+  display: none;
   overflow-x: hidden;
   overflow-y: auto; }
   .work-item-uncollapsed .work-item-header {
@@ -289,6 +290,8 @@ p,
       -ms-transition: all 0.2s ease-in-out; }
       .work-item-uncollapsed .work-item-header a:hover {
         opacity: .7; }
+    .work-item-uncollapsed .work-item-header .container {
+      position: relative; }
     .work-item-uncollapsed .work-item-header .work-item-title {
       font-size: 56px;
       opacity: 0;
@@ -317,6 +320,17 @@ p,
         text-transform: uppercase;
         opacity: .87;
         display: inline-block; }
+    .work-item-uncollapsed .work-item-header .close-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out; }
+      .work-item-uncollapsed .work-item-header .close-btn:hover {
+        opacity: .7; }
   .work-item-uncollapsed .screenshot-container {
     margin-top: -56px; }
     .work-item-uncollapsed .screenshot-container .screenshot {
