@@ -286,7 +286,8 @@ p,
   height: 100%;
   display: none;
   overflow-x: hidden;
-  overflow-y: auto; }
+  overflow-y: auto;
+  z-index: 1000; }
   .work-item-uncollapsed .work-item-header {
     margin-top: -56px;
     padding-top: 56px;

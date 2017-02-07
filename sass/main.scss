@@ -379,6 +379,7 @@ $headerHeight: 64px;
   display: none;
   overflow-x: hidden;
   overflow-y: auto;
+  z-index: 1000;
 
   .work-item-header {
     margin-top: -56px;
