@@ -1,9 +1,9 @@
 {
   "id": "valeur",
-  "colors": ["#000000", "#FF00FF"],
+  "colors": ["rgba(0, 0, 0, .7)", "#FBBC05", "#ECEFF1"],
   "name": "Valeur Psychologie",
   "description": "I made this website for Valeur Psychologie.",
-  "roles": ["Frontend webdevelopment"],
+  "roles": ["Frontend webdevelopment", "Webdesign"],
   "technologies": ["HTML5", "CSS3", "JavaScript", "PHP"],
   "link": "http://valeur-psychologie.nl",
   "screenshots": ["images/work/screenshots/valeur/1.jpg", "images/work/screenshots/valeur/2.jpg"]

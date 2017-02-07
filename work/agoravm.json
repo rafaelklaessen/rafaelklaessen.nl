@@ -1,6 +1,6 @@
 {
   "id": "agoravm",
-  "colors": ["#000000", "#FF00FF"],
+  "colors": ["#FFFFFF", "#212121", "#ECEFF1"],
   "name": "Agora VoortgangsMonitor",
   "description": "The Agora VoortgangsMonitor is a project for Agora Roermond. Together with a few others I'm building this platform. It's purpose is to monitor student's progress in a skill or subject.",
   "roles": ["Frontend webdevelopment", "Backend webdevelopment"],

@@ -24,7 +24,8 @@
     <meta name="twitter:image" content="https://www.rafaelklaessen.nl/images/icons/favicon.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
   </head>
   <body>
