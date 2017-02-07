@@ -172,7 +172,9 @@ p,
     font-size: 18px; }
 
 #skills {
-  background-color: #EA4335; }
+  position: relative;
+  background-color: #EA4335;
+  overflow: hidden; }
   #skills .skill-item-container {
     margin: 0;
     padding: 0;
@@ -185,6 +187,14 @@ p,
         margin-right: 12px;
         width: auto;
         height: 36px; }
+  #skills .code-preview {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 750px;
+    transform: translate(50%, 50%);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4), 0 0 25px 0 rgba(0, 0, 0, 0.44); }
 
 #contact {
   background-color: #ECEFF1;

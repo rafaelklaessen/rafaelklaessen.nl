@@ -224,7 +224,9 @@ $headerHeight: 64px;
 }
 
 #skills {
+  position: relative;
   background-color: #EA4335;
+  overflow: hidden;
 
   .skill-item-container {
     margin: 0;
@@ -242,6 +244,16 @@ $headerHeight: 64px;
         height: 36px;
       }
     }
+  }
+
+  .code-preview {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 750px;
+    transform: translate(50%, 50%);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4), 0 0 25px 0 rgba(0, 0, 0, 0.44);
   }
 }
 

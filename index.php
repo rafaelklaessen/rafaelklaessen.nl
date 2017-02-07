@@ -117,32 +117,33 @@
           Technologies that I'm familiar with
         </h1>
         <ul class="skill-item-container">
-          <li class="skill-item">
+          <li class="skill-item" data-skill="html5">
             <img class="skill-image" src="images/skills/html5.png" alt="HTML5 logo">
             <h4 class="skill-title">HTML5</h4>
           </li>
-          <li class="skill-item">
+          <li class="skill-item" data-skill="sass">
             <img class="skill-image" src="images/skills/sass.png" alt="HTML5 logo">
             <h4 class="skill-title">Sass</h4>
           </li>
-          <li class="skill-item">
+          <li class="skill-item" data-skill="javascript">
             <img class="skill-image" src="images/skills/javascript.png" alt="HTML5 logo">
             <h4 class="skill-title">JavaScript (ES6)</h4>
           </li>
-          <li class="skill-item">
+          <li class="skill-item" data-skill="phoenix">
             <img class="skill-image" src="images/skills/phoenix.png" alt="HTML5 logo">
             <h4 class="skill-title">Phoenix Framework</h4>
           </li>
-          <li class="skill-item">
+          <li class="skill-item" data-skill="golang">
             <img class="skill-image" src="images/skills/golang.png" alt="HTML5 logo">
             <h4 class="skill-title">Go (Golang)</h4>
           </li>
-          <li class="skill-item">
+          <li class="skill-item" data-skill="php">
             <img class="skill-image" src="images/skills/php.png" alt="HTML5 logo">
             <h4 class="skill-title">PHP</h4>
           </li>
         </ul>
       </div>
+      <img class="code-preview" data-current-skill="javascript" src="images/skills/code/javascript.jpg" alt="Code preview">
     </section>
 
     <section id="contact" class="contact page-section">

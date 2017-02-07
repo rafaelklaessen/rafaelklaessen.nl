@@ -137,6 +137,24 @@ $('#work .work-item').click(function() {
     });
 });
 
+// When a skill is hovered,show the corresponding code preview
+$('#skills .skill-item').hover(function() {
+  // Get skill to preview
+  var newPreview = $(this).data('skill');
+  // Get code preview element
+  var $codePreview = $('#skills .code-preview');
+  // Get current shown skill
+  var currentPreview = $codePreview.data('current-skill');
+
+  // Only change code preview when it's not the same skill
+  if (newPreview != currentPreview) {
+    // Change src attribute to new preview
+    $codePreview.attr('src', 'images/skills/code/' + newPreview + '.jpg');
+    // Update data-current-preview on the code preview image element
+    $codePreview.data('current-skill', newPreview);
+  }
+});
+
 // Send contact form with AJAX
 $('#contact .contact-form').submit(function(e) {
   e.preventDefault();
