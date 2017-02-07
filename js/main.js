@@ -6,6 +6,7 @@ $('#site-header .nav-item a').click(function(e) {
   // Get element to scroll to
   var scrollTo = $(this).attr('href');
 
+  // Scroll to it
   $('html, body')
     .stop()
     .animate({
@@ -126,8 +127,10 @@ $('#work .work-item').click(function() {
           workItem.fadeOut(200);
 
           // After the element's faded out, remove it.
+          // Also re-enable scroll in body.
           setTimeout(function() {
             workItem.remove();
+            $('body').css({'overflow-y': 'initial'});
           }, 200);
         }, 800);
       });
