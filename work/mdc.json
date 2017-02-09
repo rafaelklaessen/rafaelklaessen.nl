@@ -2,7 +2,7 @@
   "id": "mdc",
   "colors": ["#FFFFFF", "#34A853", "#ECEFF1"],
   "name": "MiljonairsDatingClub",
-  "description": "MiljonairsDatingClub is a website where millionnaire can get in touch with other millionnaires.",
+  "description": "MiljonairsDatingClub is a website where millionaires can get in touch with other millionaires.",
   "roles": ["Frontend webdevelopment"],
   "technologies": ["HTML5", "CSS3", "JavaScript", "PHP", "WordPress"],
   "link": "http://www.miljonairsdatingclub.com",

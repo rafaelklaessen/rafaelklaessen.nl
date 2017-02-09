@@ -10,7 +10,6 @@ $mainTransition: all .2s ease-in-out;
   -ms-transition: $transition;
 }
 
-
 // Shortcut for no appearance
 @mixin noappearance() {
   appearance: none;
@@ -408,6 +407,14 @@ $headerHeight: 64px;
       .work-item-field {
         opacity: 1;
       }
+
+      .close-btn {
+        opacity: 1;
+
+        &:hover {
+          opacity: .7;
+        }
+      }
     }
 
     a {
@@ -456,11 +463,8 @@ $headerHeight: 64px;
       top: 0;
       right: 0;
       cursor: pointer;
+      opacity: 0;
       @include transition($mainTransition);
-
-      &:hover {
-        opacity: .7;
-      }
     }
   }
 
@@ -616,5 +620,11 @@ $headerHeight: 64px;
     width: calc(100% - 24px);
     height: auto;
     transform: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .work-item-uncollapsed .work-item-header .close-btn {
+    top: -44px;
   }
 }
