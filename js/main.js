@@ -34,6 +34,31 @@ function checkScroll() {
 // refreshed the page while not being at the top.
 checkScroll();
 
+// Make sure the nav is visible when window width is higher than 768px
+$(window).resize(function() {
+  fixNavDisplay();
+});
+var $window = $(window),
+    wWidth = $window.width();
+setInterval(function() {
+  if (wWidth != $window.width()) {
+    wWidth = $window.width();
+    fixNavDisplay();  
+  }
+}, 300);
+
+// Show nav when the window width is higher than 768px
+function fixNavDisplay() {
+  if ($(window).width() > 768) {
+    $('#site-header .nav').stop().show();
+  }
+}
+
+// Toggle mobile nav
+$('#menu-btn').click(function() {
+  $('#site-header .nav').stop().toggle(200);
+});
+
 // Open work items
 $('#work .work-item').click(function() {
   // Get item ID

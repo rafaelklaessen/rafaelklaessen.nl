@@ -50,6 +50,7 @@
             </li>
           </ul>
         </nav>
+        <div id="menu-btn" class="menu-btn material-icons">menu</div>
       </div>
     </header> 
 
