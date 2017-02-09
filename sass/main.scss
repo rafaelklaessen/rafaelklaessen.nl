@@ -421,6 +421,7 @@ $headerHeight: 64px;
 
     .container {
       position: relative;
+      margin-bottom: 0;
     }
 
     .work-item-title {
@@ -463,6 +464,10 @@ $headerHeight: 64px;
     }
   }
 
+  .container {
+    margin-bottom: 56px;
+  }
+
   .screenshot-container {
     margin-top: -56px;
 
@@ -499,6 +504,30 @@ $headerHeight: 64px;
     font-size: 36px;
   }
 
+  .work-item-uncollapsed {
+    .work-item-header {
+      padding-bottom: 88px;
+      
+      .work-item-title {
+        font-size: 24px;
+      }
+
+      .work-item-field {
+        margin-bottom: 24px;
+        line-height: 1;
+
+        .title {
+          margin-bottom: 6px;
+          width: 100%;
+        }
+      }
+    }
+
+    .screenshot-container .screenshot {
+      margin-bottom: 24px;
+    }
+  }
+
   #work .work-item-container .work-item {
     width: calc(50% - 24px);
 
@@ -530,6 +559,10 @@ $headerHeight: 64px;
 
         .nav-item {
           float: none;
+
+          a {
+            width: calc(100% - 24px);
+          }
         }
       }
     }
