@@ -106,7 +106,10 @@
         </h1>
         <div class="about-text">
           <p class="section-text">
-            Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
+            And I love to do so. It's what I'm passionate about. Therefore, most of the time you'll find me programming stuff or learning new languages/frameworks/technologies. Creating stuff and programming with others are things I really enjoy as well, which is why I share most of my projects on my GitHub.
+          </p>
+          <p class="section-text">
+            I live in Roermond, The Netherlands. I program at school as well, like, all day. (Since my school motivates me to what I like.)
           </p>
         </div>
       </div>
