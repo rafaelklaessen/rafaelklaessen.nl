@@ -2,7 +2,7 @@
   "id": "agoravm",
   "colors": ["#FFFFFF", "#212121", "#ECEFF1"],
   "name": "Agora VoortgangsMonitor",
-  "description": "The Agora VoortgangsMonitor is a project for Agora Roermond. Together with a few others I'm building this platform. Its purpose is to monitor student's progress in a skill or subject.",
+  "description": "The Agora VoortgangsMonitor is a project for Agora Roermond. Together with a few others I'm building this platform. Its purpose is to monitor the progress of students in a skill or subject.",
   "roles": ["Frontend webdevelopment", "Backend webdevelopment"],
   "technologies": ["Phoenix Framework", "HTML5", "Sass", "JavaScript (ES6)"],
   "link": "https://agoravm.tk",
