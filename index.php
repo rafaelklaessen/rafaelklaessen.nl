@@ -215,7 +215,7 @@
     <footer id="site-footer" class="site-footer page-section">
       <div class="container">
         <p class="section-text">
-          Built with <span class="heart">&lt;3</span> in the Netherlands - View project on <a class="normal-link" href="#">GitHub</a>
+          Built with <span class="heart">&lt;3</span> in the Netherlands - View project on <a class="normal-link" href="https://github.com/rafaelklaessen/rafaelklaessen.nl" target="_blank">GitHub</a>
         </p>
       </div>
     </footer>
