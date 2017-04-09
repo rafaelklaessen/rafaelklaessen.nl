@@ -75,9 +75,29 @@ $('#work .work-item').click(function() {
       var technologies = data.technologies.toString();
       technologies = technologies.replace(/,/g, ', ')
 
-      // Remove https://, http:// and www. from the link
+      // Remove https://, http:// and www. from the link & GitHub link
       var link = data.link;
-      link = link.replace('https://', '').replace('http://', '').replace('www.', '');
+      var githubLink = data.githubLink;
+      
+      if (link) {
+        link = link.replace('https://', '').replace('http://', '').replace('www.', '');
+      }
+
+      if (githubLink) {
+        githubLink = githubLink.replace('https://', '').replace('http://', '').replace('www.', '');
+      }
+
+      // Get link and GitHub link HTML
+      var linkHtml = '';
+      var githubLinkHtml = '';
+
+      if (link) {
+        linkHtml = '<div class="work-item-link work-item-field"><span class="link-title title">Link: </span><a href="' + data.link + '" target="_blank">' + link + '</a></div>' 
+      }
+
+      if (githubLink) {
+        githubLinkHtml = '<div class="work-item-link work-item-field"><span class="link-title title">GitHub link: </span><a href="' + data.githubLink + '" target="_blank">' + githubLink + '</a></div>' 
+      }
 
       // Get screenshot HTML 
       var screenshotsHtml = '';
@@ -95,7 +115,7 @@ $('#work .work-item').click(function() {
               '<p class="work-item-description section-text">' + data.description + '</p>' + 
               '<div class="work-item-roles work-item-field"><span class="roles-title title">Role: </span>' + roles + '</div>' +
               '<div class="work-item-technologies work-item-field"><span class="technologies-title title">Technologies used: </span>' + technologies + '</div>' +
-              '<div class="work-item-link work-item-field"><span class="link-title title">Link: </span><a href="' + data.link + '" target="_blank">' + link + '</a></div>' +
+              linkHtml + githubLinkHtml +
               '<div class="close-btn material-icons">close</div>' +
             '</div>' +
           '</header>' +

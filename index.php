@@ -71,9 +71,9 @@
             <figure class="work-preview" style="background-image: url('images/work/agoravm.png')"></figure>
             <h4 class="work-title">AgoraVM</h4>
           </article>
-          <article id="mdc" class="work-item">
-            <figure class="work-preview" style="background-image: url('images/work/mdc.png')"></figure>
-            <h4 class="work-title">Miljonairs Dating Club</h4>
+          <article id="keep-clone" class="work-item">
+            <figure class="work-preview" style="background-image: url('images/work/keep-clone.png')"></figure>
+            <h4 class="work-title">Keep Clone</h4>
           </article>
           <article id="pin" class="work-item">
             <figure class="work-preview" style="background-image: url('images/work/pin.png')"></figure>
@@ -126,23 +126,27 @@
             <h4 class="skill-title">HTML5</h4>
           </li>
           <li class="skill-item" data-skill="sass">
-            <img class="skill-image" src="images/skills/sass.png" alt="HTML5 logo">
+            <img class="skill-image" src="images/skills/sass.png" alt="Sass logo">
             <h4 class="skill-title">Sass</h4>
           </li>
           <li class="skill-item" data-skill="javascript">
-            <img class="skill-image" src="images/skills/javascript.png" alt="HTML5 logo">
+            <img class="skill-image" src="images/skills/javascript.png" alt="JavaScript logo">
             <h4 class="skill-title">JavaScript (ES6)</h4>
           </li>
+          <li class="skill-item" data-skill="scala">
+            <img class="skill-image" src="images/skills/scala.png" alt="Scala logo">
+            <h4 class="skill-title">Scala</h4>
+          </li>
           <li class="skill-item" data-skill="phoenix">
-            <img class="skill-image" src="images/skills/phoenix.png" alt="HTML5 logo">
+            <img class="skill-image" src="images/skills/phoenix.png" alt="Phoenix Framework logo">
             <h4 class="skill-title">Phoenix Framework</h4>
           </li>
           <li class="skill-item" data-skill="golang">
-            <img class="skill-image" src="images/skills/golang.png" alt="HTML5 logo">
+            <img class="skill-image" src="images/skills/golang.png" alt="Go (Golang) logo">
             <h4 class="skill-title">Go (Golang)</h4>
           </li>
           <li class="skill-item" data-skill="php">
-            <img class="skill-image" src="images/skills/php.png" alt="HTML5 logo">
+            <img class="skill-image" src="images/skills/php.png" alt="PHP logo">
             <h4 class="skill-title">PHP</h4>
           </li>
         </ul>
