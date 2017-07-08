@@ -57,7 +57,7 @@
     <section id="site-intro" class="site-intro page-section">
       <div class="container">
         <h1 class="site-title section-title">Hi, I'm Rafael</h1>
-        <p class="site-subtext section-text">I'm a 14 y/o webdeveloper, based in the Netherlands.</p>
+        <p class="site-subtext section-text">I'm a 15 y/o webdeveloper, based in the Netherlands.</p>
       </div>
     </section>
 
