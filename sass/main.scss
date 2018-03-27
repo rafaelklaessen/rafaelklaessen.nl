@@ -33,7 +33,7 @@ h1, h2, h3, h4 {
   @include transition(color .2s ease-in-out);
 
   &:hover {
-    color: #083D91;
+    text-decoration: underline;
   }
 }
 
@@ -88,60 +88,9 @@ p,
   }
 }
 
-$headerHeight: 64px;
-#site-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: $headerHeight;
-  line-height: $headerHeight;
-  vertical-align: middle;
-  background-color: #FFFFFF;
-  font-family: 'Roboto Mono', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  z-index: 100;
-  @include transition($mainTransition);
-
-  &.is-scrolling {
-//    background-color: #FAFAFA;
-  }
-
-  .nav .nav-items {
-    float: right;
-    margin: 0 -12px;
-    padding: 0;
-    list-style: none;
-
-    .nav-item {
-      float: left;
-      margin-left: 12px;
-      margin-right: 12px;
-      @include transition(opacity .2s ease-in-out);
-
-      &:hover {
-        opacity: .5;
-      }
-
-      a {
-        line-height: $headerHeight;
-        color: inherit;
-        text-decoration: inherit;
-        display: inline-block;
-      }
-    }
-  }
-
-  .menu-btn {
-    line-height: inherit;
-    cursor: pointer;
-    display: none;
-  }
-}
-
 #site-intro {
-  margin-top: $headerHeight;
+  padding-top: 112px;
+  padding-bottom: 0;
 
   .site-title {
     font-size: 56px;
@@ -225,6 +174,7 @@ $headerHeight: 64px;
   background-size: cover;
   background-image: url('../images/open-source-background.png');
   background-repeat: no-repeat;
+  font-size: 18px;
 }
 
 #contact {
@@ -326,6 +276,8 @@ $headerHeight: 64px;
 }
 
 #site-footer {
+  padding-top: 28px;
+  padding-bottom: 28px;
   font-family: 'Roboto Mono', sans-serif;
 
   .section-text .heart {
@@ -494,46 +446,9 @@ $headerHeight: 64px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  #site-header {
-    .nav {
-      position: absolute;
-      top: $headerHeight;
-      left: 0;
-      padding-left: 24px;
-      padding-right: 24px;
-      width: 100%;
-      background-color: #FFFFFF;
-      box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
-      display: none;
-
-      .nav-items {
-        float: none;
-
-        .nav-item {
-          float: none;
-
-          a {
-            width: calc(100% - 24px);
-          }
-        }
-      }
-    }
-
-    .menu-btn {
-      display: block;
-    }
-  }
-}
-
 @media screen and (max-width: 650px) {
   .container {
     max-width: calc(100% - 24px);
-  }
-
-  #site-header .nav {
-    padding-left: 12px;
-    padding-right: 12px;
   }
 
   #work .work-item-container .work-item {
