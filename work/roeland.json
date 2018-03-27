@@ -1,6 +1,6 @@
 {
   "id": "roeland",
-  "colors": ["#FFFFFF", "#455A64", "#ECEFF1"],
+  "colors": ["#FFFFFF", "#455A64"],
   "name": "Roeland Ruijsch Songwriting Studio",
   "description": "I made this website for Roeland Ruijsch. It has an English and Dutch version and its focus is music.",
   "roles": ["Frontend webdevelopment", "Webdesign"],

@@ -1,0 +1,10 @@
+{
+  "id": "didback",
+  "colors": ["#FFFFFF", "#3B9FF5"],
+  "name": "Didback",
+  "description": "Didback is a platform that connects designers by letting them give feedback to each other, but it also provides a Dutch course system. The platform itself is not released yet, but the homepage (that I developed) is.<br>I work with a small group of developers and designers on Didback.",
+  "roles": ["Frontend webdevelopment"],
+  "technologies": ["ReactJS", "glamorous"],
+  "link": "https://didback.com",
+  "screenshots": ["images/work/screenshots/didback/1.jpg"]
+}

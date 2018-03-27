@@ -279,7 +279,7 @@ $headerHeight: 64px;
     float: left;
     margin-right: 96px;
     max-width: 100%;
-    
+
     .contact-form {
       width: 360px;
       max-width: 100%;
@@ -385,6 +385,7 @@ $headerHeight: 64px;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: #ECEFF1;
   display: none;
   overflow-x: hidden;
   overflow-y: auto;
@@ -395,7 +396,7 @@ $headerHeight: 64px;
     padding-top: 56px;
     padding-bottom: 112px;
 
-    &.activated { 
+    &.activated {
       .work-item-title {
         opacity: 1;
       }
@@ -511,7 +512,7 @@ $headerHeight: 64px;
   .work-item-uncollapsed {
     .work-item-header {
       padding-bottom: 88px;
-      
+
       .work-item-title {
         font-size: 24px;
       }
@@ -546,7 +547,7 @@ $headerHeight: 64px;
 }
 
 @media screen and (max-width: 768px) {
-  #site-header { 
+  #site-header {
     .nav {
       position: absolute;
       top: $headerHeight;
@@ -570,7 +571,7 @@ $headerHeight: 64px;
         }
       }
     }
-    
+
     &.is-scrolling .nav {
       background-color: #FFFFFF;
     }
@@ -579,7 +580,7 @@ $headerHeight: 64px;
       display: block;
     }
   }
-  
+
   #skills .code-preview {
     transform: translate(75%, 50%);
   }
@@ -589,12 +590,12 @@ $headerHeight: 64px;
   .container {
     max-width: calc(100% - 24px);
   }
-  
+
   #site-header .nav {
     padding-left: 12px;
     padding-right: 12px;
   }
-  
+
   #work .work-item-container .work-item {
     width: calc(100% - 24px);
 
@@ -602,7 +603,7 @@ $headerHeight: 64px;
       height: 30vw;
     }
   }
-  
+
   #skills .code-preview {
     height: 500px;
     transform: translate(75%, 33%);

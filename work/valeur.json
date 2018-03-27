@@ -1,6 +1,6 @@
 {
   "id": "valeur",
-  "colors": ["rgba(0, 0, 0, .7)", "#FBBC05", "#ECEFF1"],
+  "colors": ["rgba(0, 0, 0, .7)", "#FBBC05"],
   "name": "Valeur Psychologie",
   "description": "I made this website for Valeur Psychologie.",
   "roles": ["Frontend webdevelopment", "Webdesign"],

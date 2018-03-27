@@ -1,6 +1,6 @@
 {
   "id": "keep-clone",
-  "colors": ["#FFFFFF", "#34A853", "#ECEFF1"],
+  "colors": ["#FFFFFF", "#34A853"],
   "name": "Keep Clone",
   "description": "The Keep Clone is a simplified clone of Google Keep that I've built to learn Scala, the Play Framework and Firebase.",
   "roles": ["Frontend webdevelopment", "Backend webdevelopment"],

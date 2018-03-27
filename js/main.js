@@ -43,7 +43,7 @@ var $window = $(window),
 setInterval(function() {
   if (wWidth != $window.width()) {
     wWidth = $window.width();
-    fixNavDisplay();  
+    fixNavDisplay();
   }
 }, 300);
 
@@ -63,14 +63,14 @@ $('#menu-btn').click(function() {
 $('#work .work-item').click(function() {
   // Get item ID
   var itemId = $(this).attr('id');
-  
+
   // Load JSON file based on ID
   $.getJSON('work/' + itemId + '.json', {})
     .done(function(data) {
       // Get roles
       var roles = data.roles.toString();
       roles = roles.replace(/,/g, ', ')
-      
+
       // Get technologies
       var technologies = data.technologies.toString();
       technologies = technologies.replace(/,/g, ', ')
@@ -78,13 +78,26 @@ $('#work .work-item').click(function() {
       // Remove https://, http:// and www. from the link & GitHub link
       var link = data.link;
       var githubLink = data.githubLink;
-      
+
+      if (githubLink instanceof Array) {
+        githubLink = [];
+        for (var i = 0; i < data.githubLink.length; i++) {
+          githubLink[i] = data.githubLink[i];
+        }
+      }
+
       if (link) {
-        link = link.replace('https://', '').replace('http://', '').replace('www.', '');
+        link = stripUrl(link);
       }
 
       if (githubLink) {
-        githubLink = githubLink.replace('https://', '').replace('http://', '').replace('www.', '');
+        if (githubLink instanceof Array) {
+          for (var i = 0; i < githubLink.length; i++) {
+            githubLink[i] = stripUrl(githubLink[i]);
+          }
+        } else {
+          githubLink = stripUrl(githubLink);
+        }
       }
 
       // Get link and GitHub link HTML
@@ -92,14 +105,20 @@ $('#work .work-item').click(function() {
       var githubLinkHtml = '';
 
       if (link) {
-        linkHtml = '<div class="work-item-link work-item-field"><span class="link-title title">Link: </span><a href="' + data.link + '" target="_blank">' + link + '</a></div>' 
+        linkHtml = '<div class="work-item-link work-item-field"><span class="link-title title">Link: </span><a href="' + data.link + '" target="_blank">' + link + '</a></div>'
       }
 
       if (githubLink) {
-        githubLinkHtml = '<div class="work-item-link work-item-field"><span class="link-title title">GitHub link: </span><a href="' + data.githubLink + '" target="_blank">' + githubLink + '</a></div>' 
+        if (githubLink instanceof Array) {
+          for (var i = 0; i < githubLink.length; i++) {
+            githubLinkHtml += '<div class="work-item-link work-item-field"><span class="link-title title">GitHub link: </span><a href="' + data.githubLink[i] + '" target="_blank">' + githubLink[i] + '</a></div>'
+          }
+        } else {
+          githubLinkHtml = '<div class="work-item-link work-item-field"><span class="link-title title">GitHub link: </span><a href="' + data.githubLink + '" target="_blank">' + githubLink + '</a></div>'
+        }
       }
 
-      // Get screenshot HTML 
+      // Get screenshot HTML
       var screenshotsHtml = '';
       // Loop through screenshot array and generate HTML for each one.
       // The HTML will be appended to screenshotsHtml.
@@ -108,11 +127,11 @@ $('#work .work-item').click(function() {
       }
 
       // Render work item
-      var workItem = $('<section id="' + data.id + '" class="work-item-uncollapsed page-section" style="color: ' + data.colors[0] + '; background-color:' + data.colors[2] + '">' + 
+      var workItem = $('<section id="' + data.id + '" class="work-item-uncollapsed page-section" style="color: ' + data.colors[0] + ';">' +
           '<header class="work-item-header" style="background-color:' + data.colors[1] + '">' +
-            '<div class="container">' + 
-              '<h1 class="work-item-title section-title">' + data.name + '</h1>' + 
-              '<p class="work-item-description section-text">' + data.description + '</p>' + 
+            '<div class="container">' +
+              '<h1 class="work-item-title section-title">' + data.name + '</h1>' +
+              '<p class="work-item-description section-text">' + data.description + '</p>' +
               '<div class="work-item-roles work-item-field"><span class="roles-title title">Role: </span>' + roles + '</div>' +
               '<div class="work-item-technologies work-item-field"><span class="technologies-title title">Technologies used: </span>' + technologies + '</div>' +
               linkHtml + githubLinkHtml +
@@ -122,22 +141,22 @@ $('#work .work-item').click(function() {
           '<div class="container">' +
             '<section class="screenshot-container">' +
               screenshotsHtml +
-            '</section>' + 
+            '</section>' +
           '</div>' +
         '</section');
-      
+
       // Append work item to body
       workItem.appendTo('body').fadeIn(200);
-      
+
       // Disable scroll in body
       $('body').css({'overflow-y': 'hidden'});
 
       // After a little delay, add the activated class to the work-item-header
-      // for the animation. 
+      // for the animation.
       setTimeout(function() {
         workItem.find('.work-item-header').addClass('activated');
-      
-        // After the header animations are partially done, do the screenshot 
+
+        // After the header animations are partially done, do the screenshot
         // animation.
         setTimeout(function() {
           // Also loop through screenshots and add the
@@ -150,12 +169,12 @@ $('#work .work-item').click(function() {
         }, 200);
       }, 300);
 
-      // Add close button listener 
+      // Add close button listener
       workItem.find('.close-btn').click(function() {
-        // Animate workitem header 
+        // Animate workitem header
         workItem.find('.work-item-header').removeClass('activated');
 
-        // After the header animations are partially done, do the screenshot 
+        // After the header animations are partially done, do the screenshot
         // remove animation.
         setTimeout(function() {
           // Loop through the screenshots and remove the activated class for
@@ -208,7 +227,7 @@ $('#contact .contact-form').submit(function(e) {
     // Clear all errors
     $('#contact .contact-form .form-group .form-field').removeClass('error');
     $('#contact .contact-form .form-group .form-error').text('');
-    
+
     if (data == 'success') {
       // Show success message
       $('#contact .success-message').slideDown(400);
@@ -231,3 +250,10 @@ $('#contact .contact-form').submit(function(e) {
     }
   });
 });
+
+function stripUrl(url) {
+  return url
+    .replace('https://', '')
+    .replace('http://', '')
+    .replace('www.', '');
+}

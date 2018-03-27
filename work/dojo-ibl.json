@@ -1,0 +1,13 @@
+{
+  "id": "dojo-ibl",
+  "colors": ["#FFFFFF", "#24C7C8"],
+  "name": "Dojo-IBL",
+  "description": "Dojo-IBL is an open source platform for Inquiry Based Learning. I worked on its rewrite in React + Firebase, as well as its React Native app.",
+  "roles": ["Frontend webdevelopment", "App Development (with React Native)"],
+  "technologies": ["ReactJS", "glamorous", "Firebase"],
+  "githubLink": [
+    "https://github.com/WELTEN/dojo-ibl-v2",
+    "https://github.com/WELTEN/dojo-ibl-mobile/tree/firebase-rewrite"
+  ],
+  "screenshots": ["images/work/screenshots/dojo-ibl/1.png"]
+}

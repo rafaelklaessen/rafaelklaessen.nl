@@ -52,7 +52,7 @@
         </nav>
         <div id="menu-btn" class="menu-btn material-icons">menu</div>
       </div>
-    </header> 
+    </header>
 
     <section id="site-intro" class="site-intro page-section">
       <div class="container">
@@ -67,28 +67,28 @@
           What I've made
         </h1>
         <section class="work-item-container">
-          <article id="agoravm" class="work-item">
-            <figure class="work-preview" style="background-image: url('images/work/agoravm.png')"></figure>
-            <h4 class="work-title">AgoraVM</h4>
+          <article id="progressmonitor" class="work-item">
+            <figure class="work-preview" style="background-image: url('images/work/progressmonitor.png');"></figure>
+            <h4 class="work-title">ProgressMonitor</h4>
+          </article>
+          <article id="didback" class="work-item">
+            <figure class="work-preview" style="background-image: url('images/work/didback.svg'); background-size: 25%;"></figure>
+            <h4 class="work-title">Didback</h4>
+          </article>
+          <article id="dojo-ibl" class="work-item">
+            <figure class="work-preview" style="background-image: url('images/work/dojo-ibl.png');"></figure>
+            <h4 class="work-title">Dojo-IBL</h4>
           </article>
           <article id="keep-clone" class="work-item">
-            <figure class="work-preview" style="background-image: url('images/work/keep-clone.png')"></figure>
+            <figure class="work-preview" style="background-image: url('images/work/keep-clone.png');"></figure>
             <h4 class="work-title">Keep Clone</h4>
           </article>
-          <article id="pin" class="work-item">
-            <figure class="work-preview" style="background-image: url('images/work/pin.png')"></figure>
-            <h4 class="work-title">Project Internet Nation</h4>
-          </article>
-          <article id="noodlesearching" class="work-item">
-            <figure class="work-preview" style="background-image: url('images/work/noodlesearching.png')"></figure>
-            <h4 class="work-title">NoodleSearching</h4>
-          </article>
           <article id="valeur" class="work-item">
-            <figure class="work-preview" style="background-image: url('images/work/valeur.png')"></figure>
+            <figure class="work-preview" style="background-image: url('images/work/valeur.png');"></figure>
             <h4 class="work-title">Valeur Psychologie</h4>
           </article>
           <article id="roeland" class="work-item">
-            <figure class="work-preview" style="background-image: url('images/work/roeland.png')"></figure>
+            <figure class="work-preview" style="background-image: url('images/work/roeland.png');"></figure>
             <h4 class="work-title">Roeland Ruijsch Songwriting Studio</h4>
           </article>
         </section>
