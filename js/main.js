@@ -1,44 +1,3 @@
-// Smooth scroll
-$('#site-header .nav-item a').click(function(e) {
-  // Prevent normal href function
-  e.preventDefault();
-
-  // Get element to scroll to
-  var scrollTo = $(this).attr('href');
-
-  // Scroll to it
-  $('html, body')
-    .stop()
-    .animate({
-      scrollTop: $(scrollTo).offset().top - 64
-    }, 400);
-});
-
-// Make sure the nav is visible when window width is higher than 768px
-$(window).resize(function() {
-  fixNavDisplay();
-});
-var $window = $(window),
-    wWidth = $window.width();
-setInterval(function() {
-  if (wWidth != $window.width()) {
-    wWidth = $window.width();
-    fixNavDisplay();
-  }
-}, 300);
-
-// Show nav when the window width is higher than 768px
-function fixNavDisplay() {
-  if ($(window).width() > 768) {
-    $('#site-header .nav').stop().show();
-  }
-}
-
-// Toggle mobile nav
-$('#menu-btn').click(function() {
-  $('#site-header .nav').stop().toggle(200);
-});
-
 // Open work items
 $('#work .work-item').click(function() {
   // Get item ID
@@ -110,7 +69,7 @@ $('#work .work-item').click(function() {
       var workItem = $('<section id="' + data.id + '" class="work-item-uncollapsed page-section" style="color: ' + data.colors[0] + ';">' +
           '<header class="work-item-header" style="background-color:' + data.colors[1] + '">' +
             '<div class="container">' +
-              '<h1 class="work-item-title section-title">' + data.name + '</h1>' +
+              '<h1 class="work-item-title">' + data.name + '</h1>' +
               '<p class="work-item-description section-text">' + data.description + '</p>' +
               '<div class="work-item-roles work-item-field"><span class="roles-title title">Role: </span>' + roles + '</div>' +
               '<div class="work-item-technologies work-item-field"><span class="technologies-title title">Technologies used: </span>' + technologies + '</div>' +
@@ -179,38 +138,6 @@ $('#work .work-item').click(function() {
         }, 800);
       });
     });
-});
-
-// Send contact form with AJAX
-$('#contact .contact-form').submit(function(e) {
-  e.preventDefault();
-  var url = $(this).attr('action');
-  $.post(url, $(this).serialize(), function(data) {
-    // Clear all errors
-    $('#contact .contact-form .form-group .form-field').removeClass('error');
-    $('#contact .contact-form .form-group .form-error').text('');
-
-    if (data == 'success') {
-      // Show success message
-      $('#contact .success-message').slideDown(400);
-      $('#contact .contact-form').slideUp(400);
-    } else {
-      // Parse response
-      data = JSON.parse(data)
-
-      // Loop through errors
-      for (var i in data) {
-        // Get form group by key i from data
-        var formGroup = $('#contact .contact-form .' + i.replace('Err', '') + '-form-group'),
-            // Form input or textarea
-            formField = formGroup.find('.form-field'),
-            // Error field
-            errField = formGroup.find('.form-error');
-        formField.addClass('error');
-        errField.text(data[i]);
-      }
-    }
-  });
 });
 
 function stripUrl(url) {
