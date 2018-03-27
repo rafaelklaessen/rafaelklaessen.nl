@@ -97,8 +97,7 @@ $headerHeight: 64px;
   height: $headerHeight;
   line-height: $headerHeight;
   vertical-align: middle;
-  color: #FFFFFF;
-  background-color: #4285F4;
+  background-color: #FFFFFF;
   font-family: 'Roboto Mono', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -106,9 +105,7 @@ $headerHeight: 64px;
   @include transition($mainTransition);
 
   &.is-scrolling {
-    color: #000000;
-    background-color: #FFFFFF;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
+//    background-color: #FAFAFA;
   }
 
   .nav .nav-items {
@@ -145,8 +142,6 @@ $headerHeight: 64px;
 
 #site-intro {
   margin-top: $headerHeight;
-  color: #FFFFFF;
-  background-color: #4285F4;
 
   .site-title {
     font-size: 56px;
@@ -154,12 +149,11 @@ $headerHeight: 64px;
 
   .site-subtext {
     font-family: 'Roboto Mono', sans-serif;
-    color: rgba(255, 255, 255, .87);
+    color: #9E9E9E;
   }
 }
 
 #work {
-  background-color: #ECEFF1;
   overflow: auto;
 
   .work-item-container {
@@ -184,13 +178,20 @@ $headerHeight: 64px;
       width: calc(33.33333333% - 24px);
       background-color: #FFFFFF;
       box-sizing: border-box;
-      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .21);
       display: inline-block;
       cursor: pointer;
       @include transition($mainTransition);
 
       &:hover {
-        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
+        background-color: #F5F5F5;
+        transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+
+        .work-title {
+          color: #000000;
+        }
       }
 
       .work-preview {
@@ -206,69 +207,24 @@ $headerHeight: 64px;
         margin-top: 12px;
         margin-bottom: 12px;
         width: 100%;
-        color: #424242;
+        text-align: center;
+        color: #9E9E9E;
         font-weight: 400;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        @include transition(all .35s ease-in-out);
       }
     }
   }
-
-  .github-link {
-    margin-top: 24px;
-  }
 }
 
-#about {
-  color: rgba(0, 0, 0, .7);
-  background-color: #FBBC05;
-
-  .section-title .title-topline {
-    margin-bottom: 6px;
-    color: rgba(0, 0, 0, .6);
-    font-size: 18px;
-  }
-}
-
-#skills {
-  position: relative;
-  background-color: #EA4335;
-  overflow: hidden;
-
-  .skill-item-container {
-    margin: 0;
-    padding: 12px 0;
-    list-style: none;
-
-    .skill-item {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      line-height: 36px;
-      vertical-align: middle;
-
-      .skill-image {
-        float: left;
-        margin-right: 12px;
-        width: auto;
-        height: 36px;
-      }
-
-      .skill-title {
-        margin: 0;
-      }
-    }
-  }
-
-  .code-preview {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: auto;
-    height: 750px;
-    transform: translate(50%, 50%);
-    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4), 0 0 25px 0 rgba(0, 0, 0, 0.44);
-  }
+#open-source {
+  color: #FFFFFF;
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/open-source-background.png');
+  background-repeat: no-repeat;
 }
 
 #contact {
@@ -370,8 +326,6 @@ $headerHeight: 64px;
 }
 
 #site-footer {
-  color: #FFFFFF;
-  background-color: #212121;
   font-family: 'Roboto Mono', sans-serif;
 
   .section-text .heart {
@@ -493,12 +447,6 @@ $headerHeight: 64px;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  #skills .code-preview {
-    transform: translate(67%, 50%);
-  }
-}
-
 @media screen and (max-width: 860px) {
   .section-title {
     margin-bottom: 18px;
@@ -555,7 +503,7 @@ $headerHeight: 64px;
       padding-left: 24px;
       padding-right: 24px;
       width: 100%;
-      background-color: #4285F4;
+      background-color: #FFFFFF;
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, .2), 0 5px 5px 0 rgba(0, 0, 0, .24);
       display: none;
 
@@ -572,17 +520,9 @@ $headerHeight: 64px;
       }
     }
 
-    &.is-scrolling .nav {
-      background-color: #FFFFFF;
-    }
-
     .menu-btn {
       display: block;
     }
-  }
-
-  #skills .code-preview {
-    transform: translate(75%, 50%);
   }
 }
 
@@ -602,25 +542,6 @@ $headerHeight: 64px;
     .work-preview {
       height: 30vw;
     }
-  }
-
-  #skills .code-preview {
-    height: 500px;
-    transform: translate(75%, 33%);
-  }
-}
-
-@media screen and (max-width: 525px) {
-  #skills .code-preview {
-    position: initial;
-    margin: {
-      bottom: -64px;
-      left: 12px;
-      right: 12px;
-    }
-    width: calc(100% - 24px);
-    height: auto;
-    transform: none;
   }
 }
 

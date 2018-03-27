@@ -14,26 +14,6 @@ $('#site-header .nav-item a').click(function(e) {
     }, 400);
 });
 
-// Toggle the header to is-scrolling when the user has scrolled.
-// We'll use the checkScroll function for that.
-$(window).scroll(function() {
-  checkScroll();
-});
-
-function checkScroll() {
-  var scrollTop = $(window).scrollTop();
-
-  if (scrollTop) {
-    $('#site-header').addClass('is-scrolling');
-  } else {
-    $('#site-header').removeClass('is-scrolling');
-  }
-}
-
-// Call the checkScroll function normally aswell, as the user might have
-// refreshed the page while not being at the top.
-checkScroll();
-
 // Make sure the nav is visible when window width is higher than 768px
 $(window).resize(function() {
   fixNavDisplay();
@@ -199,24 +179,6 @@ $('#work .work-item').click(function() {
         }, 800);
       });
     });
-});
-
-// When a skill is hovered,show the corresponding code preview
-$('#skills .skill-item').hover(function() {
-  // Get skill to preview
-  var newPreview = $(this).data('skill');
-  // Get code preview element
-  var $codePreview = $('#skills .code-preview');
-  // Get current shown skill
-  var currentPreview = $codePreview.data('current-skill');
-
-  // Only change code preview when it's not the same skill
-  if (newPreview != currentPreview) {
-    // Change src attribute to new preview
-    $codePreview.attr('src', 'images/skills/code/' + newPreview + '.jpg');
-    // Update data-current-preview on the code preview image element
-    $codePreview.data('current-skill', newPreview);
-  }
 });
 
 // Send contact form with AJAX
