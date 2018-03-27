@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $name = test_input($_POST["name"]);
     if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
-      $nameErr = "Not a valid name."; 
+      $nameErr = "Not a valid name.";
     }
   }
 
@@ -19,15 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $email = test_input($_POST["email"]);
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format."; 
+      $emailErr = "Invalid email format.";
     }
   }
 
-  if (empty($_POST["subject"])) {
-    $subjectErr = "Subject is required.";
-  } else {
-    $subject = test_input($_POST["subject"]);
-  }
+  $subject = test_input($_POST["subject"]);
 
   if (empty($_POST["msg"])) {
     $msgErr = "A message is required.";
