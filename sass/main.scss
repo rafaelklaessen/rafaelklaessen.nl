@@ -118,7 +118,7 @@ p,
       -ms-transform: scale(1.1);
 
       .work-title {
-        color: #000000;
+        opacity: 1;
       }
     }
 
@@ -136,11 +136,11 @@ p,
       margin-bottom: 12px;
       width: 100%;
       text-align: center;
-      color: #9E9E9E;
       font-weight: 400;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      opacity: 0;
       @include transition(all .35s ease-in-out);
     }
   }
