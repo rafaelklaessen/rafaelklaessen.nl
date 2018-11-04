@@ -1,0 +1,10 @@
+{
+  "id": "challengemonitor",
+  "colors": ["#FFFFFF", "#0017C6"],
+  "name": "ChallengeMonitor",
+  "description": "ChallengeMonitor is a platform that lets its users build their portfolio and identity by managing their projects in it.",
+  "roles": ["Frontend webdevelopment", "Backend webdevelopment"],
+  "technologies": ["ReactJS", "emotion", "Firebase", "Google App Engine"],
+  "link": "https://egodact.com",
+  "screenshots": ["images/work/screenshots/progressmonitor/1.png", "images/work/screenshots/progressmonitor/2.png", "images/work/screenshots/progressmonitor/3.png"]
+}

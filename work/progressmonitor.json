@@ -4,7 +4,7 @@
   "name": "ProgressMonitor",
   "description": "ProgressMonitor is a platform that implements a radically new view on education, using rubrics instead of grades and encouraging formative assessment.",
   "roles": ["Frontend webdevelopment", "Backend webdevelopment"],
-  "technologies": ["Scala", "ReactJS", "glamorous", "Firebase", "Google App Engine"],
-  "link": "https://agoravm.nl",
+  "technologies": ["Scala", "ReactJS", "emotion", "Firebase", "Google App Engine"],
+  "link": "https://egodact.com",
   "screenshots": ["images/work/screenshots/progressmonitor/1.png", "images/work/screenshots/progressmonitor/2.png", "images/work/screenshots/progressmonitor/3.png"]
 }

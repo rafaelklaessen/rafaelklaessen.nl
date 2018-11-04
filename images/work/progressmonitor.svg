@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1500 1500">
+  <defs>
+    <style>
+      .bg {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-path: url(#clip-Custom_Size_1);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #00bdaf;
+      }
+
+      .cls-4 {
+        fill: #ab47bc;
+      }
+
+      .cls-5 {
+        filter: url(#Rectangle_4);
+      }
+
+      .cls-6 {
+        filter: url(#Rectangle_3);
+      }
+
+      .cls-7 {
+        filter: url(#Rectangle_2);
+      }
+
+      .cls-8 {
+        filter: url(#Rectangle_1);
+      }
+    </style>
+    <filter id="Rectangle_1" x="122.5" y="123.5" width="1257" height="1257" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-color="#757575" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_2" x="433" y="368" width="798" height="384" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="32" result="blur-2"/>
+      <feFlood flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3" x="324" y="752" width="900" height="384" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="32" result="blur-3"/>
+      <feFlood flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_4" x="455.5" y="699.5" width="828" height="489" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Custom_Size_1">
+      <rect width="1500" height="1500"/>
+    </clipPath>
+  </defs>
+  <g id="Custom_Size_1" data-name="Custom Size – 1" class="cls-1">
+    <rect class="bg" width="1500" height="1500"/>
+    <g class="cls-8" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="Rectangle_1-2" data-name="Rectangle 1" class="cls-2" width="960" height="960" rx="120" transform="translate(271 272)"/>
+    </g>
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="Rectangle_2-2" data-name="Rectangle 2" class="cls-3" width="606" height="192" rx="60" transform="translate(529 464)"/>
+    </g>
+    <g class="cls-6" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="Rectangle_3-2" data-name="Rectangle 3" class="cls-3" width="708" height="192" rx="60" transform="translate(420 848)"/>
+    </g>
+    <g class="cls-5" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="Rectangle_4-2" data-name="Rectangle 4" class="cls-4" width="531" height="192" rx="60" transform="translate(604 848)"/>
+    </g>
+  </g>
+</svg>
