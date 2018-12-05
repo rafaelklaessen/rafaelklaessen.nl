@@ -19,7 +19,7 @@ $mainTransition: all .2s ease-in-out;
 body {
   margin: 0;
   width: 100%;
-  font-family: 'PT Serif', 'Georgia', sans-serif;
+  font-family: 'Lora', 'Georgia', sans-serif;
   font-size: 18px;
   overflow-x: hidden;
 }
@@ -61,16 +61,21 @@ p,
   }
 }
 
+.section-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 56px;
+  font-weight: 400;
+  text-align: center;
+}
+
 #site-intro {
   padding-top: 112px;
   padding-bottom: 0;
-  text-align: center;
 
-  .site-title {
-    margin: 0;
-    margin-bottom: 0;
-    font-size: 56px;
-    font-weight: 400;
+  .text-container {
+    font-size: 20px;
+    width: 640px;
   }
 }
 
@@ -139,29 +144,33 @@ p,
 
 #contact {
   padding-top: 0;
-  padding-bottom: 0;
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
 
   .block {
-    padding-top: 112px;
-    padding-bottom: 112px;
-    flex: 1;
+    padding: 12px;
+    width: 250px;
     text-align: center;
-    font-size: 24px;
-    font-family: 'Playfair Display', sans-serif;
     text-decoration: none;
     outline-width: 0;
+    display: inline-block;
+    border-radius: 4px;
     @include transition($mainTransition);
+
+    &:first-child {
+      margin-right: 6px;
+    }
+
+    &:last-child {
+      margin-left: 6px;
+    }
   }
 
   .email-btn {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: #2196F3;
+    background-color: #F5F5F5;
 
     &:hover {
-      color: #42A5F5;
-      background-color: #0D47A1;
+      color: #0D47A1;
     }
   }
 
@@ -182,8 +191,6 @@ p,
   padding-top: 28px;
   padding-bottom: 28px;
   text-align: center;
-  background-color: #F5F5F5;
-  font-family: 'PT Serif', sans-serif;
 
   .section-text .heart {
     color: #EA4335;
